@@ -1,0 +1,66 @@
+@import url('https://fonts.googleapis.com/css?family=Elsie+Swash+Caps');
+@import url('https://fonts.googleapis.com/css?family=Clicker+Script');
+
+/* This is a CSS comment! */
+
+/* CSS Syntax
+
+selector {
+  property: value;
+  property: value;
+}
+
+*/
+
+/* Type Selector */
+
+p { /* selects all types of an HTML element */
+  font-size: 12px; /* Could also be set using pt, %, or em (= to 16 pixels)*/
+  line-height: 2em; /* 32 pixels */
+}
+
+figcaption {
+  /* font-weight: normal;
+  font-size: 0.75em;
+  line-height: 1.5em;
+  font-family: Georgia, "New Times Roman", serif; */
+  font: normal 0.75em/1.5em "Clicker Script", serif;
+  color: #777; /* color name, hexidecimal (#FF1122, #F12), rgb, rgba (255, 0, 0, 50) */
+  text-align: right;
+}
+
+/* Class selector (applied to as many elements as I'd like) */
+
+.rabbit-hole { /* selects elements with class="rabbit-hole" */
+  font: bold 2.6em 'Elsie Swash Caps', cursive;
+  color: white;
+  text-shadow: 0 2px 3px #000;
+}
+
+/* ID selector (apply to one element per page) */
+
+#logo { /* Select elemts with the id="logo" */
+  background: aqua;
+}
+
+/* Descendent Selectors (Using a space, only selects element types denote as a child of another element type, id or class) */
+
+#logo h1 { /* Will only style h1 inside element with id="logo" */
+  font-family: 'Clicker Script', cursive;
+}
+
+#logo h2 { /* Will only style h2 inside element with id="logo" */
+  font-family: 'Elsie Swash Caps', cursive;
+}
+
+/* Pseudo Selector */
+
+#details a:link, #details a:visited {
+  color: black;
+  text-decoration: none;
+}
+
+#details a:hover {
+  color: black;
+  text-decoration: underline;
+}
